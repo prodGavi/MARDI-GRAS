@@ -1,0 +1,122 @@
+        .aboutContainer {
+            width: 90vw;
+            margin: 30px auto;
+            display: grid;
+
+            grid-template-columns: repeat(2, 1fr);
+            grid-template-rows: 300px 300px 300px 300px 300px 300px;
+            gap: 20px;
+
+            grid-template-areas:
+                "pic1 text1"
+                "text2 pic2"
+                "pic3 text3"
+                "text4 pic4"
+                "pic5 text5"
+        }
+
+
+        .picItem {
+            width: 40vw;
+            /* border-top: 1px solid $mainPurple;
+            border-bottom: 1px solid $mainPurple; */
+            /* height: 300px; */
+
+        }
+
+        .textItem {
+            width: 40vw;
+            font-size: 1.05rem;
+            font-family: $font3;
+            color: $mainWhite;
+            border-top: 1px solid $mainPurple;
+            border-bottom: 1px solid $mainPurple;
+            padding-top: 70px;
+            text-align: center;
+        }
+
+        .text1 {
+            grid-area: text1;
+        }
+
+        .text2 {
+            grid-area: text2;
+        }
+
+        .text3 {
+            grid-area: text3;
+        }
+
+        .text4 {
+            grid-area: text4;
+        }
+
+        .text5 {
+            grid-area: text5;
+        }
+
+        .pic1 {
+            grid-area: pic1;
+            overflow: hidden;
+            filter: drop-shadow(0 0 0.5rem $mainWhite);
+        }
+
+        .pic2 {
+            grid-area: pic2;
+            overflow: hidden;
+            filter: drop-shadow(0 0 0.5rem $mainWhite);
+        }
+
+        .pic3 {
+            grid-area: pic3;
+            overflow: hidden;
+            filter: drop-shadow(0 0 0.5rem $mainWhite);
+        }
+
+        .pic4 {
+            grid-area: pic4;
+            overflow: hidden;
+            filter: drop-shadow(0 0 0.5rem $mainWhite);
+        }
+
+        .pic5 {
+            grid-area: pic5;
+            overflow: hidden;
+            filter: drop-shadow(0 0 0.5rem $mainWhite);
+        }
+
+        @media (max-width:768px) {
+            .aboutContainer {
+                grid-template-columns: repeat(1, 1fr);
+                grid-template-rows: 300px 300px 300px 300px 300px 300px;
+                gap: 20px;
+
+                grid-template-areas: "pic1"
+                    "text1"
+                    "pic2"
+                    "text2"
+                    "pic3"
+                    "text3"
+                    "pic4"
+                    "text4"
+                    "pic5"
+                    "text5"
+            }
+
+            .picItem {
+                width: 90vw;
+
+
+            }
+
+            .textItem {
+                width: 90vw;
+                font-size: 1.05rem;
+                font-family: $font3;
+                color: $mainWhite;
+                border-top: 1px solid $mainPurple;
+                border-bottom: 1px solid $mainPurple;
+                padding-top: 30px;
+                text-align: center;
+            }
+        }

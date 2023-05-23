@@ -1,0 +1,16 @@
+.carousel {
+    max-width: 95vw;
+    margin: 0 auto;
+    z-index: 1;
+    border: 1px solid $mainWhite;
+    border-radius: 25px;
+    overflow: hidden;
+    margin-top: 15px;
+}
+
+
+
+.carousel-item {
+    font-family: $font1;
+    max-height: 475px;
+}

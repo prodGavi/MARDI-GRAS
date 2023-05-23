@@ -1,0 +1,10 @@
+.navbar {
+    background-color: $mainBlack;
+    font-size: 1.5rem;
+    font-family: $font1;
+    border-bottom: 1px solid $mainPurple;
+}
+
+.nav-item:hover {
+    background-color: $mainPurple;
+}

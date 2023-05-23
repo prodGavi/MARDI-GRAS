@@ -1,0 +1,105 @@
+        #imageContainer {
+            display: block;
+            margin: 0 auto;
+            max-width: 300px;
+            object-fit: fill;
+            margin-top: 20px;
+            margin-bottom: 35px;
+            /* padding-right: 50px; */
+            animation: 1s ease-out 0s 1 slideInFromLeft;
+        }
+
+        @keyframes slideInFromLeft {
+            0% {
+                transform: translateX(-300%);
+            }
+
+            100% {
+                transform: translateX(0);
+            }
+        }
+
+
+        .indexContainer2 {
+            width: 80vw;
+            margin: 40px auto;
+            display: grid;
+
+            grid-template-columns: repeat(4, 1fr);
+            grid-template-rows: 400px;
+            gap: 20px;
+
+            grid-template-areas: "title2 title2 title3 title3"
+        }
+
+        .myItem2 {
+            padding: 20px;
+            border: 1px solid $mainWhite;
+            background-image: url('../IMAGES/back-pattern.png'), linear-gradient(to left, $mainBlack, #6d3f7a);
+            text-shadow: 1px 1px 3px $mainBlack;
+        }
+
+        .title2 {
+            grid-area: title2;
+            color: $mainWhite;
+            font-family: $font2;
+            font-size: 2.5rem;
+            padding: 5px;
+            text-align: center;
+            border: 1px solid $mainWhite;
+        }
+
+        .title3 {
+            grid-area: title3;
+            color: $mainWhite;
+            font-family: $font2;
+            font-size: 2.5rem;
+            padding: 5px;
+            text-align: center;
+            border: 1px solid $mainWhite;
+        }
+
+        .infoTitle {
+            text-decoration: underline;
+        }
+
+        .paraIndex {
+            padding: 10px;
+            font-size: 1.2rem;
+            text-decoration: none;
+            text-align: justify center;
+            font-family: $font3;
+        }
+
+        @media (max-width:992px) {
+            .indexContainer2 {
+                grid-template-columns: repeat(4, 1fr);
+                grid-template-rows: 400px 400px;
+                grid-template-areas: "title2 title2 title2 title2"
+                    "title3 title3 title3 title3"
+            }
+
+            .paraIndex {
+                font-size: 1.05rem;
+            }
+        }
+
+        @media (max-width:1300px) {
+
+            .paraIndex {
+                font-size: 1.1rem;
+            }
+        }
+
+        @media (max-width:1200px) {
+
+            .paraIndex {
+                font-size: 1.02rem;
+            }
+        }
+
+        @media (max-width:576px) {
+            #imageContainer {
+                padding: 0;
+            }
+        }

@@ -1,0 +1,331 @@
+.navbar {
+  background-color: #0d0d0d;
+  font-size: 1.5rem;
+  font-family: "Pattaya";
+  border-bottom: 1px solid #9453a6;
+}
+
+.nav-item:hover {
+  background-color: #9453a6;
+}
+
+body {
+  background-image: url("../IMAGES/back-pattern.png"), linear-gradient(to right, #0d0d0d, #6d3f7a);
+}
+
+.carousel {
+  max-width: 95vw;
+  margin: 0 auto;
+  z-index: 1;
+  border: 1px solid #f2f2f2;
+  border-radius: 25px;
+  overflow: hidden;
+  margin-top: 15px;
+}
+
+.carousel-item {
+  font-family: "Pattaya";
+  max-height: 475px;
+}
+
+.indexContainer {
+  width: 65vw;
+  margin: 15px auto;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: 100px;
+  gap: 20px;
+  grid-template-areas: "title1 title1 title1 title1";
+}
+
+.myItem {
+  padding: 20px;
+  border: 1px solid #f2f2f2;
+}
+
+.title1 {
+  grid-area: title1;
+  text-decoration: underline;
+  color: #f2f2f2;
+  font-family: "Henny Penny";
+  font-size: 3.4rem;
+  padding: 5px;
+  text-align: center;
+  background-image: url(../IMAGES/slider2.jpg);
+  border: 1px solid #f2f2f2;
+}
+
+.sponsorCard {
+  margin: 10px;
+  left: 3vw;
+  background-color: #f2f2f2;
+}
+.sponsorCard img {
+  height: 200px;
+}
+.sponsorCard .btn {
+  background-color: #9453a6;
+  border: 1px solid #0d0d0d;
+  font-family: "Roboto", sans-serif;
+}
+.sponsorCard .btn:hover {
+  background-color: #f2f2f2;
+  color: #9453a6;
+}
+
+@media (max-width: 576px) {
+  .sponsorCard {
+    margin: 5px;
+    left: 1vw;
+  }
+  .title1 {
+    font-size: 3rem;
+  }
+  .indexContainer {
+    width: 75vw;
+  }
+}
+#imageContainer {
+  display: block;
+  margin: 0 auto;
+  max-width: 300px;
+  -o-object-fit: fill;
+     object-fit: fill;
+  margin-top: 20px;
+  margin-bottom: 35px;
+  /* padding-right: 50px; */
+  animation: 1s ease-out 0s 1 slideInFromLeft;
+}
+
+@keyframes slideInFromLeft {
+  0% {
+    transform: translateX(-300%);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+.indexContainer2 {
+  width: 80vw;
+  margin: 40px auto;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: 400px;
+  gap: 20px;
+  grid-template-areas: "title2 title2 title3 title3";
+}
+
+.myItem2 {
+  padding: 20px;
+  border: 1px solid #f2f2f2;
+  background-image: url("../IMAGES/back-pattern.png"), linear-gradient(to left, #0d0d0d, #6d3f7a);
+  text-shadow: 1px 1px 3px #0d0d0d;
+}
+
+.title2 {
+  grid-area: title2;
+  color: #f2f2f2;
+  font-family: "Henny Penny";
+  font-size: 2.5rem;
+  padding: 5px;
+  text-align: center;
+  border: 1px solid #f2f2f2;
+}
+
+.title3 {
+  grid-area: title3;
+  color: #f2f2f2;
+  font-family: "Henny Penny";
+  font-size: 2.5rem;
+  padding: 5px;
+  text-align: center;
+  border: 1px solid #f2f2f2;
+}
+
+.infoTitle {
+  text-decoration: underline;
+}
+
+.paraIndex {
+  padding: 10px;
+  font-size: 1.2rem;
+  text-decoration: none;
+  text-align: justify center;
+  font-family: "Roboto", sans-serif;
+}
+
+@media (max-width: 992px) {
+  .indexContainer2 {
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: 400px 400px;
+    grid-template-areas: "title2 title2 title2 title2" "title3 title3 title3 title3";
+  }
+  .paraIndex {
+    font-size: 1.05rem;
+  }
+}
+@media (max-width: 1300px) {
+  .paraIndex {
+    font-size: 1.1rem;
+  }
+}
+@media (max-width: 1200px) {
+  .paraIndex {
+    font-size: 1.02rem;
+  }
+}
+@media (max-width: 576px) {
+  #imageContainer {
+    padding: 0;
+  }
+}
+.b-example-divider {
+  height: 3rem;
+  background-color: rgba(0, 0, 0, 0.1);
+  border: solid rgba(0, 0, 0, 0.15);
+  border-width: 1px 0;
+  box-shadow: inset 0 0.5em 1.5em rgba(0, 0, 0, 0.1), inset 0 0.125em 0.5em rgba(0, 0, 0, 0.15);
+}
+
+.bi {
+  vertical-align: -0.125em;
+  fill: currentColor;
+}
+
+.aboutContainer {
+  width: 90vw;
+  margin: 30px auto;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: 300px 300px 300px 300px 300px 300px;
+  gap: 20px;
+  grid-template-areas: "pic1 text1" "text2 pic2" "pic3 text3" "text4 pic4" "pic5 text5";
+}
+
+.picItem {
+  width: 40vw;
+  /* border-top: 1px solid $mainPurple;
+  border-bottom: 1px solid $mainPurple; */
+  /* height: 300px; */
+}
+
+.textItem {
+  width: 40vw;
+  font-size: 1.05rem;
+  font-family: "Roboto", sans-serif;
+  color: #f2f2f2;
+  border-top: 1px solid #9453a6;
+  border-bottom: 1px solid #9453a6;
+  padding-top: 70px;
+  text-align: center;
+}
+
+.text1 {
+  grid-area: text1;
+}
+
+.text2 {
+  grid-area: text2;
+}
+
+.text3 {
+  grid-area: text3;
+}
+
+.text4 {
+  grid-area: text4;
+}
+
+.text5 {
+  grid-area: text5;
+}
+
+.pic1 {
+  grid-area: pic1;
+  overflow: hidden;
+  filter: drop-shadow(0 0 0.5rem #f2f2f2);
+}
+
+.pic2 {
+  grid-area: pic2;
+  overflow: hidden;
+  filter: drop-shadow(0 0 0.5rem #f2f2f2);
+}
+
+.pic3 {
+  grid-area: pic3;
+  overflow: hidden;
+  filter: drop-shadow(0 0 0.5rem #f2f2f2);
+}
+
+.pic4 {
+  grid-area: pic4;
+  overflow: hidden;
+  filter: drop-shadow(0 0 0.5rem #f2f2f2);
+}
+
+.pic5 {
+  grid-area: pic5;
+  overflow: hidden;
+  filter: drop-shadow(0 0 0.5rem #f2f2f2);
+}
+
+@media (max-width: 768px) {
+  .aboutContainer {
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: 300px 300px 300px 300px 300px 300px;
+    gap: 20px;
+    grid-template-areas: "pic1" "text1" "pic2" "text2" "pic3" "text3" "pic4" "text4" "pic5" "text5";
+  }
+  .picItem {
+    width: 90vw;
+  }
+  .textItem {
+    width: 90vw;
+    font-size: 1.05rem;
+    font-family: "Roboto", sans-serif;
+    color: #f2f2f2;
+    border-top: 1px solid #9453a6;
+    border-bottom: 1px solid #9453a6;
+    padding-top: 30px;
+    text-align: center;
+  }
+}
+.accordion {
+  margin-top: 185px;
+}
+
+@media (max-width: 800px) {
+  .accordion {
+    width: 80vw;
+    margin-top: 200px;
+  }
+}
+.accordion-header {
+  font-family: "Pattaya";
+}
+
+.accordion-body {
+  font-family: "Henny Penny";
+}
+
+.faqImage {
+  display: block;
+  margin: 0 auto;
+  max-width: 300px;
+  margin-top: 30px;
+}
+
+.faqImage2 {
+  display: block;
+  margin: 0 auto;
+  max-width: 300px;
+}
+
+h2 {
+  font-size: 3rem;
+  font-family: "Pattaya";
+  color: #9453a6;
+  text-decoration: underline;
+  margin-bottom: 25px;
+}/*# sourceMappingURL=mainSass.css.map */
